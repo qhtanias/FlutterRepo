@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(SplashScreen());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const new({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +15,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           centerTitle: false,
           backgroundColor: Colors.black,
-          title: Text(
+          title: const Text(
             "Notes",
             style: TextStyle(color: Colors.white, fontSize: 30),
           ),
         ),
-        //OVERFLOW ERROR
         body: SingleChildScrollView(
           child: Column(
             spacing: 20,
@@ -29,9 +28,9 @@ class MyApp extends StatelessWidget {
                 height: 150,
                 width: 500,
                 color: Colors.pink,
-                child: Center(
+                child: const Center(
                   child: Text(
-                    "UI concepts worth\nexsisting",
+                    "UI concepts worth\nexisting",
                     style: TextStyle(fontSize: 23),
                   ),
                 ),
@@ -40,9 +39,9 @@ class MyApp extends StatelessWidget {
                 height: 150,
                 width: 500,
                 color: Colors.brown,
-                child: Center(
+                child: const Center(
                   child: Text(
-                    "UI concepts worth\nexsisting",
+                    "UI concepts worth\nexisting",
                     style: TextStyle(fontSize: 23),
                   ),
                 ),
@@ -51,9 +50,9 @@ class MyApp extends StatelessWidget {
                 height: 150,
                 width: 500,
                 color: Colors.green,
-                child: Center(
+                child: const Center(
                   child: Text(
-                    "UI concepts worth\nexsisting",
+                    "UI concepts worth\nexisting",
                     style: TextStyle(fontSize: 23),
                   ),
                 ),
@@ -62,9 +61,9 @@ class MyApp extends StatelessWidget {
                 height: 150,
                 width: 500,
                 color: Colors.yellow,
-                child: Center(
+                child: const Center(
                   child: Text(
-                    "UI concepts worth\nexsisting",
+                    "UI concepts worth\nexisting",
                     style: TextStyle(fontSize: 23),
                   ),
                 ),
@@ -73,9 +72,9 @@ class MyApp extends StatelessWidget {
                 height: 150,
                 width: 500,
                 color: Colors.cyan,
-                child: Center(
+                child: const Center(
                   child: Text(
-                    "UI concepts worth\nexsisting",
+                    "UI concepts worth\nexisting",
                     style: TextStyle(fontSize: 23),
                   ),
                 ),
@@ -84,9 +83,9 @@ class MyApp extends StatelessWidget {
                 height: 150,
                 width: 500,
                 color: Colors.orange,
-                child: Center(
+                child: const Center(
                   child: Text(
-                    "UI concepts worth\nexsisting",
+                    "UI concepts worth\nexisting",
                     style: TextStyle(fontSize: 23),
                   ),
                 ),
@@ -95,9 +94,9 @@ class MyApp extends StatelessWidget {
                 height: 150,
                 width: 500,
                 color: Colors.pink,
-                child: Center(
+                child: const Center(
                   child: Text(
-                    "UI concepts worth\nexsisting",
+                    "UI concepts worth\nexisting",
                     style: TextStyle(fontSize: 23),
                   ),
                 ),
@@ -106,9 +105,9 @@ class MyApp extends StatelessWidget {
                 height: 150,
                 width: 500,
                 color: Colors.pink,
-                child: Center(
+                child: const Center(
                   child: Text(
-                    "UI concepts worth\nexsisting",
+                    "UI concepts worth\nexisting",
                     style: TextStyle(fontSize: 23),
                   ),
                 ),
@@ -117,9 +116,9 @@ class MyApp extends StatelessWidget {
                 height: 150,
                 width: 500,
                 color: Colors.pink,
-                child: Center(
+                child: const Center(
                   child: Text(
-                    "UI concepts worth\nexsisting",
+                    "UI concepts worth\nexisting",
                     style: TextStyle(fontSize: 23),
                   ),
                 ),
@@ -133,21 +132,15 @@ class MyApp extends StatelessWidget {
 }
 
 class SplashScreen extends StatelessWidget {
-  const new({super.key});
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.black,
-        body: Center(child: Image.asset("assets/m1102mohammadserage.jpg")),
+        body: Center(child: Image.asset("assets/1784198010023.jpg")),
       ),
     );
   }
 }
-
-//asset image, network iamge, XFile image, memory image,
-
-//1- get an image
-
-//2 - create a folder
