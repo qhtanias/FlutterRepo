@@ -1,17 +1,17 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
-  runApp(const MaterialApp(home: HomePage()));
+  runApp(MaterialApp(home: CounterPage()));
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class CounterPage extends StatefulWidget {
+  const new({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<CounterPage> createState() => _CounterPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _CounterPageState extends State<CounterPage> {
   int number = 0;
 
   @override
@@ -20,7 +20,9 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Text('$number'),
+            Text("$number"),
+
+            //button
             GestureDetector(
               onTap: () {
                 setState(() {
@@ -29,9 +31,9 @@ class _HomePageState extends State<HomePage> {
               },
               child: Container(
                 height: 50,
-                width: 100,
+                width: 200,
                 color: Colors.blue,
-                child: const Center(child: Text('Increment')),
+                child: Center(child: Text("INCREMENT")),
               ),
             ),
           ],
@@ -40,4 +42,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
